@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a70d41fcb04340a69e2ffbcf40716f64 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_a70d41fcb04340a69e2ffbcf40716f64" ></div>
+        
+</body>
+<script>    
+    
+            var map_a70d41fcb04340a69e2ffbcf40716f64 = L.map(
+                "map_a70d41fcb04340a69e2ffbcf40716f64",
+                {
+                    center: [36.238738, 137.915509],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 9,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1d984e2759f04df9991dea309c85b468 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a70d41fcb04340a69e2ffbcf40716f64);
+        
+    
+            var circle_marker_b714228461c0461b837515b02b2cf175 = L.circleMarker(
+                [36.627177, 138.192105],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_a70d41fcb04340a69e2ffbcf40716f64);
+        
+    
+            circle_marker_b714228461c0461b837515b02b2cf175.bindTooltip(
+                `<div>
+                     長野市保健所管内 <br> 感染15人中 <br> 感染源不明1人 <br> 不特定多数との接触1人 <br> 感染源調査中1人
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_cc0a1d6cf19d43d8b5d4575d0b17369d = L.circleMarker(
+                [36.841296, 138.357964],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 40, "stroke": true, "weight": 3}
+            ).addTo(map_a70d41fcb04340a69e2ffbcf40716f64);
+        
+    
+            circle_marker_cc0a1d6cf19d43d8b5d4575d0b17369d.bindTooltip(
+                `<div>
+                     北信保健所管内 <br> 感染8人
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b4335039eb0449fba2b7cf40cda77fd7 = L.circleMarker(
+                [36.400927, 138.26026],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 35, "stroke": true, "weight": 3}
+            ).addTo(map_a70d41fcb04340a69e2ffbcf40716f64);
+        
+    
+            circle_marker_b4335039eb0449fba2b7cf40cda77fd7.bindTooltip(
+                `<div>
+                     上田保健所管内 <br> 感染7人
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_83cb17583bf246418a4a8505b18de12e = L.circleMarker(
+                [36.075292, 138.076571],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 55, "stroke": true, "weight": 3}
+            ).addTo(map_a70d41fcb04340a69e2ffbcf40716f64);
+        
+    
+            circle_marker_83cb17583bf246418a4a8505b18de12e.bindTooltip(
+                `<div>
+                     諏訪保健所管内 <br> 感染11人
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ccd44a6e77484ca38838ab75ccae0864 = L.circleMarker(
+                [35.841045, 137.957286],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 45, "stroke": true, "weight": 3}
+            ).addTo(map_a70d41fcb04340a69e2ffbcf40716f64);
+        
+    
+            circle_marker_ccd44a6e77484ca38838ab75ccae0864.bindTooltip(
+                `<div>
+                     伊那保健所管内 <br> 感染9人
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_78728e789c284b44994407b771a627c8 = L.circleMarker(
+                [36.510195, 137.862162],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a70d41fcb04340a69e2ffbcf40716f64);
+        
+    
+            circle_marker_78728e789c284b44994407b771a627c8.bindTooltip(
+                `<div>
+                     大町保健所管内 <br> 感染1人(全退院済)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_61caf46c8e054f36b9f4c041d4e9fca8 = L.circleMarker(
+                [36.238738, 137.915509],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 60, "stroke": true, "weight": 3}
+            ).addTo(map_a70d41fcb04340a69e2ffbcf40716f64);
+        
+    
+            circle_marker_61caf46c8e054f36b9f4c041d4e9fca8.bindTooltip(
+                `<div>
+                     松本保健所管内 <br> 感染12人(全退院済)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_98e0292794084930a840ebf3b7bdabb1 = L.circleMarker(
+                [35.844893, 137.68746],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_a70d41fcb04340a69e2ffbcf40716f64);
+        
+    
+            circle_marker_98e0292794084930a840ebf3b7bdabb1.bindTooltip(
+                `<div>
+                     木曽保健所管内 <br> 感染4人
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_aeed84b5b6ce48a29e7a98bb923c911a = L.circleMarker(
+                [35.513914, 137.829529],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25, "stroke": true, "weight": 3}
+            ).addTo(map_a70d41fcb04340a69e2ffbcf40716f64);
+        
+    
+            circle_marker_aeed84b5b6ce48a29e7a98bb923c911a.bindTooltip(
+                `<div>
+                     飯田保健所管内 <br> 感染5人
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_206fa3ecfd6543a0a78773cf79592347 = L.circleMarker(
+                [36.25403, 138.476634],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a70d41fcb04340a69e2ffbcf40716f64);
+        
+    
+            circle_marker_206fa3ecfd6543a0a78773cf79592347.bindTooltip(
+                `<div>
+                     佐久保健所管内 <br> 感染1人(全退院済)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
